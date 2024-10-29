@@ -160,6 +160,10 @@ button:hover {
     .language-container {
         margin-top: 10px; 
     }
+    .netflix-logo {
+        width: 100px;
+        margin-top: 13px;
+    }
 }
 
 /* Responsive */
