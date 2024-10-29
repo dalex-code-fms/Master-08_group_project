@@ -17,6 +17,7 @@ header {
     padding: 20px; 
     position: relative; 
     z-index: 2; /* soit au-dessus de l'overlay */
+    margin-left: 120px;
 }
 
 
@@ -29,10 +30,10 @@ header {
 .netflix-logo {
     width: 150px; 
     height: auto; 
+    display: flex;
 }
 
 
-/* Styles pour la langue */
 .language-container {
     display: flex;
     align-items: center;
@@ -41,7 +42,7 @@ header {
     position: relative;
 }
 
-/* Positionnement de l'icône dans le select */
+
 .language-icon {
     width: 24px;
     height: 24px;
@@ -63,7 +64,7 @@ header {
     margin-right: 10px;
 }
 
-/* Styles du bouton pour l'identification */
+
 .language-container button {
     margin-left: 10px;
     padding: 10px 20px;
@@ -143,6 +144,7 @@ button:hover {
     header {
         flex-direction: row; /* Maintient l'orientation horizontale */
         justify-content: space-between; 
+        margin-left: 0;
     }
 
     h1 {
