@@ -9,7 +9,6 @@ body {
     padding: 0; 
 }
 
-
 header {
     display: flex; 
     justify-content: space-between; /* Espace entre le logo  */
@@ -20,19 +19,16 @@ header {
     margin-left: 120px;
 }
 
-
 .logo-container {
     flex: 0 0 auto; /* Ne permet pas au logo de s'étirer */
     margin-left: 20px; 
 }
-
 
 .netflix-logo {
     width: 150px; 
     height: auto; 
     display: flex;
 }
-
 
 .language-container {
     display: flex;
@@ -41,7 +37,6 @@ header {
     margin-right: 20px;
     position: relative;
 }
-
 
 .language-icon {
     width: 24px;
@@ -62,8 +57,8 @@ header {
     z-index: 2;
     border-radius: 5px;
     margin-right: 10px;
+    width: auto;
 }
-
 
 .language-container button {
     margin-left: 10px;
@@ -75,18 +70,15 @@ header {
     cursor: pointer;
 }
 
-
 h1 {
-    margin-top: 150px; 
+    margin-top: 200px; 
     font-size: 60px; 
 }
-
 
 h3 {
     margin: 20px 0; 
     font-size: 18px;
 }
-
 
 input[type="email"] {
     padding: 15px; 
@@ -113,7 +105,6 @@ button:hover {
     cursor: pointer; 
 }
 
-
 /* Fond sombre */
 .overlay {
     position: absolute; /* Couvrir l'ensemble de la page */
@@ -130,14 +121,12 @@ button:hover {
     border-radius: 5px; margin: 0;
 }
 
-
 /* Fond plus sombre */
 @media (max-width: 768px) {
     .overlay {
         background-color: rgba(0, 0, 0, 0.7);
     }
 }
-
 
 /* Responsive pour les écrans plus petits */
 @media (max-width: 768px) {
@@ -149,6 +138,7 @@ button:hover {
 
     h1 {
         font-size: 40px; 
+        margin-top: 100px; 
     }
     h3 {
         font-size: 16px; 
@@ -164,9 +154,16 @@ button:hover {
         width: 100px;
         margin-top: 13px;
     }
+
+    /* Masquer le texte */
+    #language-select {
+        padding-left: 37px; 
+        color: transparent; /* Cache le texte sans changer la taille */
+        width: 10px;
+    }
 }
 
-/* Responsive */
+/* Responsive pour très petits écrans */
 @media (max-width: 480px) {
     h1 {
         font-size: 30px; 
@@ -174,7 +171,10 @@ button:hover {
     input[type="email"], button {
         width: 100%; 
     }
+
+    /* Masquer totalement le texte dans le sélecteur de langue */
+    #language-select {
+        padding-left: 37px;
+        color: transparent; /* Cache le texte */
+    }
 }
-
-
-
