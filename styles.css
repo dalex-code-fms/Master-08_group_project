@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    height: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+    margin: 5rem 30rem;
+    height: 100%;
+}
+
+#callToAction_popcorn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 8rem;
+    transition: transform 0.5s ease;
+}
+
+#callToAction_popcorn:hover{
+    transform: scale(1.05)
+}
+
+#btn_callToAction {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1rem;
+    background-image: linear-gradient(to right, #251733, #221836, #1f1838, #1b193b, #151a3e);
+    border-radius: 1.6rem;
+    padding: 1rem 3rem;
+    height: min-content;
+}
+
+#btn_callToAction:hover {
+    background-image: linear-gradient(to right, #482464, #3d225f, #32205b, #261d55, #1a1b50);
+}
+
+#texte>:first-child {
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+#btn_callToAction a {
+    font-weight: bold;
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(64,66,89);
+    border-radius: 0.5rem;
+}
+
+#carrousel {
+    width: 100%;
+    position: relative;
+}
+
+#selectors {
+    display: flex;
+    gap: 2rem;
+}
+
+select {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: rgb(15, 15, 15);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+#links {
+    position: relative;
+}
+
+#carrousel ul {
+    list-style: none;
+    display: flex;
+    gap: 4rem;
+    padding: 0 2rem;
+}
+
+#carrousel ul li {
+    transition: transform 0.3s ease;
+}
+
+#carrousel ul li:hover{
+    transform: scale(1.05)
+}
+
+#links > :nth-child(1){
+    border-radius: 1rem;
+}
+
+#links > :nth-child(2){
+    position: absolute;
+    top: -11.5rem;
+    left: -5rem;
+    width: 12rem;
+}
+
+#carrousel_list{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-right: 4rem;
+    overflow: hidden;
+}
+
+#btn_carrousel {
+    position: absolute;
+    padding: 0.7rem;
+    top: 20rem;
+    right: 0.5rem;
+    color: rgb(187,187,187);
+    background-color: rgb(26, 26, 26);
+    height: 12rem;
+    border-radius: 0.5rem;
+    border: none;
+    font-size: 2rem;
+    margin: auto 0;
+    transition: background-color 0.2s ease;
+}
+
+#btn_carrousel:hover {
+    background-color: rgb(51, 51, 51);
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.carrousel-img {
+    width: 25rem;
+}
+
+@media (max-width: 1669px){
+    #wrapper{
+     margin: 5rem 20rem;
+    }
+
+    .carrousel-img {
+        width: 17rem;
+    }
+
+    #btn_carrousel {
+        top: 15rem;
+        right: 0.7rem;
+    }
+
+}
+
+@media (max-width: 1280px){
+    #wrapper{
+     margin: 5rem 10rem;
+    }
+
+    .carrousel-img {
+        width: 11.1rem;
+    }
+
+   #links > :nth-child(2){
+        width: 8rem;
+        top: -6.5rem;
+        left: -4.2rem;
+    }
+
+    #btn_carrousel {
+        top: 11.5rem;
+        right: 0.8rem;
+    }
+}
+
+@media (max-width: 969px){
+    #wrapper{
+     margin: 5rem 2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .carrousel-img {
+        width: 11.1rem;
+    }
+
+   #links > :nth-child(2){
+        width: 7.5rem;
+        bottom: 10rem;
+        left: -3.8rem;
+    }
+
+    #btn_carrousel {
+        top: 17rem;
+        right: 0.8rem;
+    }
+
+    #selectors {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+}
+
+@media (max-width: 784px) {
+    #btn_callToAction {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    #callToAction_popcorn {
+        align-items: start;
+        flex-direction: column;
+        margin-bottom: 10rem;
+    }
+
+    #callToAction_popcorn>:nth-child(1){
+        position: absolute;
+        top: -6rem;
+        left: 1rem;
+    }
+
+    #btn_callToAction {
+        padding: 3rem 2rem;
+    }
+
+}
