@@ -119,6 +119,7 @@ button:hover {
 #button-style{
     padding: 5px 17px 5px 17px;
     border-radius: 5px; margin: 0;
+    margin-right: 300px;
 }
 
 /* Fond plus sombre */
@@ -160,6 +161,11 @@ button:hover {
         padding-left: 37px; 
         color: transparent; /* Cache le texte sans changer la taille */
         width: 10px;
+    }
+    #button-style{
+        padding: 5px 17px 5px 17px;
+        border-radius: 5px; margin: 0;
+        margin-right: 10px;
     }
 }
 
