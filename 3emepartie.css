@@ -1,0 +1,260 @@
+* {
+    margin: 10px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    min-height: 100px;
+}
+
+/*--------------------------- Partie Cards -----------------------------------------*/ 
+
+
+.container {
+    max-width: 1900px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-image: linear-gradient(to right bottom, #192145, #241a38, #210f17);
+    position: relative;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width:300px;
+    min-height: 250px;
+    text-align: left;
+}
+
+.card h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.icon {
+    position: absolute;
+    bottom: -6px;
+    right: -6px;
+
+    /* display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px; */
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+}
+
+
+
+
+
+
+/*--------------------------- partie FAQ -----------------------------------------*/ 
+
+
+.faq-container {
+    text-align:center;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.faq-list {
+    margin:10px 100px;
+    list-style: none;
+    padding: 24px;
+    justify-content: center;
+    width:1200px;
+}
+
+.faq-list li {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.faq-list li:hover {
+    background-color: #444;
+}
+
+.plus-sign {
+    font-size: 40px;
+    color: #ccc;
+}
+
+/*--------------------------- partie section email -----------------------------------------*/
+
+.email-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.email-section p {
+    font-size: 18px;
+    color: #ffffff; 
+}
+
+.input-section {
+    display: flex;
+    justify-content: center;
+}
+
+.input-section input {
+    padding: 10px;
+    width: 650px;
+    font-size: 18px;
+    border: 1px solid #333;
+    border-radius: 2px;
+    background-color: #141414;
+    color: #fff;
+}
+
+.input-section button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-section button:hover {
+    background-color: #f40612;
+}
+
+
+
+
+/*--------------------------- partie Footer -----------------------------------------*/ 
+
+
+footer {
+    color: #999;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 0.9em;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align:left;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: start;
+    padding: 0 20px;
+    text-align: left;
+
+    /*margin: 0 auto 20px;
+    padding: 0; */
+}
+
+.footer-links a {
+    color: #999;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-language {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.footer-language select {
+    background-color: #141414;
+    color: #fff;
+    border: 1px solid #999;
+}
+
+.footer-copyright {
+    font-size: 1.2em;
+    color: #666;
+}
+
+
+.footer-questions,
+.footer-language,
+.footer-copyright {
+    text-align: left;
+}
+
+.footer-questions a {
+    color:#666;
+}
+
+
+/* ------------------------------ Partie Media Queries ---------------------------------------------------- */
+
+
+/* Petits écrans (tablettes en portrait) */
+@media (max-width: 1024px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .faq-list li {
+        font-size: 16px;
+    }
+
+    .input-section input {
+        width: 100%;
+        max-width: 500px;
+    }
+}
+
+/* Écrans mobiles (smartphones) */
+@media (max-width: 600px) {
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .faq-list {
+        padding: 0 10px;
+    }
+
+    .faq-list li {
+        font-size: 14px;
+    }
+
+    .footer-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
