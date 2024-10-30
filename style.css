@@ -1,12 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 body {
     font-family: Arial, sans-serif;
-    background-image: url('img/img.jpg');
+    background-image: url('./images/background_img.jpg');
     background-size: cover; /* L'image couvre toute la page */
-    color: white; 
+    background-repeat: no-repeat;
     text-align: center; 
-    margin: 0; 
-    padding: 0; 
 }
 
 header {
@@ -107,7 +111,7 @@ button:hover {
 
 /* Fond sombre */
 .overlay {
-    position: absolute; /* Couvrir l'ensemble de la page */
+    position: absolute;
     top: 0;
     left: 0; 
     width: 100%; 
